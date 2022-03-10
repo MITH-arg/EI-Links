@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./media/screenshots/ei_links_ventana.png" alt="EI Links screenshot" style="width: 50%;"/>
+    <img src="./media/screenshots/ei_links_ventana.png" alt="EI Links screenshot" style="width: 50%;"/>
 </div>
 
 # EI-Links
@@ -21,7 +21,7 @@ Hay dos tutoriales para la instalacion:
 
 ### Tutorial resumido
 
-1. Descargar el '**EI-Links.rar**'
+1. Descargar el archivo [**EI-Links.rar**](https://github.com/MITH-arg/EI-Links/blob/main/EI-Links.rar)
 
 1. Descomprimirlo en la carpeta donde quedara guardada la extension
 
@@ -39,7 +39,7 @@ Hay dos tutoriales para la instalacion:
 
     Primero hay que descargar el archivo que contiene la extension. Para ello la manera mas sencilla es:
 
-    - Abrir el archivo [EI-Links.rar](https://github.com/MITH-arg/EI-Links/blob/main/EI-Links.rar)
+    - Abrir el archivo [EI-Links.rar](https://github.com/MITH-arg/EI-Links/blob/main/EI-Links.rar) de este repositorio
     
     - Una vez abierto darle a ***descargar*** | ***download***
 
@@ -67,6 +67,8 @@ Hay dos tutoriales para la instalacion:
 
     <img src="./media/tutorial_instalacion/paso-3.png" alt="tutorial paso 3" style="width: 75%;"/>
 
+    <br>
+    
     - Habilitar el modo desarrollador
 
     > Esquina superior derecha
