@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "UNLP E. Links",
+    "name": "EI Links",
     "version": "0.0.2",
 
     "action": {
@@ -9,7 +9,7 @@
           "24": "media/icons/icon24.png",
           "32": "media/icons/icon32.png"
         },
-        "default_title": "UNLP E. Links",
+        "default_title": "EI Links",
         "default_popup": "popup.html"
       },
     "description": "Links utiles para un estudiante de Informatica",
@@ -27,5 +27,5 @@
         "matches": ["<all_urls>"],
         "js": ["content.js"]
     }],
-    "permissions": ["storage"]
+    "permissions": []
 }
