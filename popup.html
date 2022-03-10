@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="tema_oscuro">
-    <div class="c_todo">
-        <div class="c_general">
+    <div class="c_principal">
+        <div class="c_secciones">
             <div class="c_seccion utilidad" data-enable="false">
-                <h1 class="l-title">Utilidad</h1>
-                <ul class="l-list">
+                <h1 class="l-titulo">Utilidad</h1>
+                <ul class="l-lista">
                     <li>
                         <a class="l-item" href="https://excalidraw.com/" target="_blank" rel="noopener noreferrer">
                             <img src="./media/links_iconos/excalidraw-logo-180x180.png" alt="">
@@ -71,8 +71,8 @@
             </div>
             
             <div class="c_seccion facultad">
-                <h1 class="l-title">Facultad</h1>
-                <ul class="l-list">
+                <h1 class="l-titulo">Facultad</h1>
+                <ul class="l-lista">
                     <li>
                         <a class="l-item" href="https://linktr.ee/franjainfo" target="_blank" rel="noopener noreferrer">
                             <img src="./media/links_iconos/franja-morada.png" alt="">
@@ -139,7 +139,8 @@
                 </li>
                 <li class="l_opcion">
                     <button id="habilitarUtilidad">
-                        Habilitar Utilidad
+                        <span id="textoHabilitar" data-enable="true">Habilitar Utilidad</span>
+                        <span id="textoDeshabilitar" data-enable="false">Deshabilitar Utilidad</span>
                     </button>
                 </li>
             </ul>

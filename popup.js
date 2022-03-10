@@ -20,7 +20,11 @@ if (document.body.classList.contains('tema_oscuro') && localStorage.getItem('tem
 btnTema.addEventListener('click', cambiarTema);
 
 
-const btnUtilidad = document.querySelector('#habilitarUtilidad');
+const btnUtilidad = {
+    elemento : document.querySelector('#habilitarUtilidad'),
+    textoHabilitar : document.querySelector('#textoHabilitar'),
+    textoDeshabilitar : document.querySelector('#textoDeshabilitar'),
+}
 const containerUtilidad = document.querySelector('.utilidad');
 
 function cambiarModo () {
@@ -30,6 +34,9 @@ function cambiarModo () {
     
     containerUtilidad.setAttribute("data-enable", nuevoEstado);
 
+    btnUtilidad.textoHabilitar.setAttribute("data-enable", !nuevoEstado);
+    btnUtilidad.textoDeshabilitar.setAttribute("data-enable", nuevoEstado);
+
     localStorage.setItem("utilidad-habilitada", nuevoEstado);
 }
 
@@ -38,4 +45,4 @@ if (utilidadHabilitada !== containerUtilidad.getAttribute('data-enable')) {
     cambiarModo();
 }
 
-btnUtilidad.addEventListener('click', cambiarModo);
+btnUtilidad.elemento.addEventListener('click', cambiarModo);
