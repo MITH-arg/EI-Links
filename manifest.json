@@ -5,19 +5,19 @@
 
     "action": {
         "default_icon": {
-          "16": "media/icons/icon16.png",
-          "24": "media/icons/icon24.png",
-          "32": "media/icons/icon32.png"
+          "16": "media/iconos/icon16.png",
+          "24": "media/iconos/icon24.png",
+          "32": "media/iconos/icon32.png"
         },
         "default_title": "EI Links",
         "default_popup": "popup.html"
       },
     "description": "Links utiles para un estudiante de Informatica",
     "icons": {
-        "16": "media/icons/icon16.png",
-        "32": "media/icons/icon32.png",
-        "48": "media/icons/icon48.png",
-       "128": "media/icons/icon128.png"
+        "16": "media/iconos/icon16.png",
+        "32": "media/iconos/icon32.png",
+        "48": "media/iconos/icon48.png",
+       "128": "media/iconos/icon128.png"
     },
 
     "background": {
