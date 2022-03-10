@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button, a {
+    all: unset;
+}
+ul {
+    list-style: none;
+}
+
+
+/*           */
+/* Variables */
+/*           */
+
+:root {
+    --clr-dev: hsl(300, 100%, 50%);
+
+    --fondo-1: hsl(0, 0%, 90%);
+    --fondo-2: hsl(0, 0%, 85%);
+
+    --texto-1: hsl(0, 0%, 5%);
+    --texto-2: hsl(0, 0%, 15%);
+
+    --borde-1: hsl(0, 0%, 70%);
+    --scroll-thumb: hsl(186, 100%, 50%);
+    --scroll-thumb-apagado: hsl(186, 100%, 35%);
+}
+
+.tema_claro {
+    --fondo-1: hsl(0, 0%, 90%);
+    --fondo-2: hsl(0, 0%, 85%);
+
+    --texto-1: hsl(0, 0%, 5%);
+    --texto-2: hsl(0, 0%, 30%);
+
+    --borde-1: hsl(0, 0%, 70%);
+}
+
+.tema_oscuro {
+    --fondo-1: hsl(0, 0%, 10%);
+    --fondo-2: hsl(0, 0%, 15%);
+
+    --texto-1: hsl(0, 0%, 95%);
+    --texto-2: hsl(0, 0%, 70%);
+
+    --borde-1: hsl(0, 0%, 30%);
+}
+
+
+/*           */
+/* Principal */
+/*           */
+
+.c_todo {
+    background-color: var(--fondo-1);
+    color: var(--texto-1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.c_general {
+    display: flex;
+}
+
+.c_seccion {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    margin-block: 1rem;
+    padding-inline: 2rem;
+    gap: 1.5rem;
+}
+
+.c_seccion.utilidad {
+    display: none;
+    border-right: 1px solid var(--borde-1);
+}
+.c_seccion.utilidad[data-enable="true"] {
+    display: flex;
+}
+
+.c_seccion ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.l-title {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--borde-1);
+}
+
+.l-list {
+    --font-size: 1rem;
+    --item-padding: 0.5rem;
+    --links-cuantity: 6;
+    --view-height: calc((var(--font-size) + var(--item-padding) * 2) * var(--links-cuantity));
+    height: var(--view-height);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.l-item {
+    display: flex;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+.l-item:hover {
+    background-color: var(--fondo-2);
+}
+.l-item img {
+    height: 1rem;
+}
+
+a {
+    cursor: pointer;
+}
+a span {
+    color: var(--texto-1);
+}
+
+
+.c_opciones {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.l_opciones {
+    width: max-content;
+    border-top: 1px solid var(--borde-1);
+    display: flex;
+    flex-direction: row-reverse;
+}
+.l_opcion {
+    color: var(--texto-2);
+}
+.l_opcion:hover {
+    color: var(--texto-1);
+    background-color: var(--fondo-2);
+}
+.l_opcion button {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+
+/*              */
+/* Barra Scroll */
+/*              */
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    background: inherit;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb-apagado);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-thumb);
+}
+
